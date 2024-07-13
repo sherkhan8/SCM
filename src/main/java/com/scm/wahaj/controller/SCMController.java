@@ -1,12 +1,15 @@
 package com.scm.wahaj.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class SCMController {
 	
+	@RequestMapping("/home")
 	public String hello() {
-		return "hello";
+		System.out.println("Hello Mr Wahaj");
+		return "home";
 	}
 	
 	
